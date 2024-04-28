@@ -1,0 +1,387 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f1faee;
+
+}
+
+
+.Name   {
+    width: 100%;
+    height: 200px;  
+    background: #ee6c4d;
+
+}
+
+
+.Name .Content
+{
+    width: 50%;
+    height: 50%;
+    position: absolute; 
+    left: 10%;
+
+    
+}
+
+.Name .Content .P1{
+
+    color: #FFFFFF;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;    
+
+
+}
+
+.Name .img {
+    position: absolute;
+    top: 2%;
+    right: 15%;
+    border-radius: 50%; /* Cambiado a 50% para asegurar un círculo */
+    overflow: hidden;
+}
+
+.Name .img img {
+    width: 200px; /* Utilizando 30% del ancho de la ventana */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+@media (max-width: 600px) {
+    .Name .img {
+        top: 5%; /* Ajuste de la posición para pantallas más pequeñas */
+        right: 7%; /* Ajuste de la posición para pantallas más pequeñas */
+    }
+    
+    .Name .img img {
+        width: 150px; /* Reducción del ancho para pantallas más pequeñas */
+    }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .Name .Content {
+        width: 50%; /* Cambiar el ancho al 90% en pantallas de 600px o menos */
+        left: 1%; /* Centrar horizontalmente en pantallas de 600px o menos */
+        white-space: pre-line; /* Esto permite que el texto se divida en varias líneas */
+    }
+
+    .Name .Content .P1 {
+        font-size: 30px; /* Tamaño de fuente reducido para pantallas más pequeñas */
+
+    }
+
+}
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desc, .info {
+    width: 40%;
+    height: auto;
+    background-color: #f1faee;
+    margin: 2%;
+    padding: 30px;
+}
+
+.info 
+
+.desc {
+    float: right;
+}
+
+.info {
+    float: left;
+}
+
+.Titulo {
+    color: #293241;
+    
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: xx-large;
+    text-align: left;     
+    margin-bottom: 5%;
+    padding-bottom: 20px; /* Agrega espacio entre el texto y la línea */
+    border-bottom: 2px solid #293241; /* Cambio del orden de los valores para que solid sea la línea */
+    display: inline-block; /* Hace que el borde se ajuste al ancho del texto */
+}
+
+
+.parrafo
+{
+    color: #293241;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    font-style: large;
+    display: block;
+    margin-top: 1%;
+    
+
+}
+
+
+ .Correo, .Git, .Ubicacion {
+    color: #293241;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    font-style: large;
+    display: block;
+    margin-top: 6%;
+    
+    background-repeat: no-repeat;
+  
+}
+
+.info .Correo {
+    background-image: url('correo.png'); /* Ruta de la imagen del icono de correo */
+    background-size: 30px; /* Tamaño del icono */
+    background-position: left center; /* Posición del icono a la izquierda y centrado verticalmente */
+    padding-left: 40px; /* Espacio para el icono */
+}
+
+.info .Git{
+
+    background-image: url('git3.png'); /* Ruta de la imagen del icono de correo */
+    background-size: 30px; /* Tamaño del icono */
+    background-position: left center; /* Posición del icono a la izquierda y centrado verticalmente */
+    padding-left: 40px; /* Espacio para el icono */
+}
+
+.info .Ubicacion{
+
+    background-image: url('ubi.png'); /* Ruta de la imagen del icono de correo */
+    background-size: 19px; /* Tamaño del icono */
+    background-position: left center; /* Posición del icono a la izquierda y centrado verticalmente */
+    padding-left: 20px;
+}
+
+
+
+
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .desc, .info {
+        width: 90%;
+    }
+}
+
+
+.container2 {
+    display: flex; /* Establecer el contenedor como flexbox */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
+}
+
+.Experiencia, .Skills {
+    width: 40%; /* Establecer el ancho de cada elemento */
+    height: auto;
+    background-color: #f1faee;
+    margin: 0px 2%; /* Espacio entre los elementos y con los bordes de la pantalla */
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .Experiencia, .Skills {
+        width: 90%; /* Reducir el ancho en pantallas más pequeñas */
+    }
+}
+
+
+.Experiencia .tituloExp{
+
+    color: #293241;
+    font-family: "Lato", sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: large;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #293241; /* Cambio del orden de los valores para que solid sea la línea */
+    display: inline-block; /* Hace que el borde se ajuste al ancho del texto */
+}
+
+
+.Experiencia .tituloPro{
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic; /* Hace que el texto esté en cursiva */
+    display: block;
+    margin-top: 1px;
+
+}
+
+
+.Experiencia .listado1{
+
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    
+
+}
+
+
+.Experiencia .titulo3{
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic; /* Hace que el texto esté en cursiva */
+    display: block;
+    margin-top:  5%;
+    
+}
+
+.Experiencia .t3tiempo{
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    font-style: italic; /* Hace que el texto esté en cursiva */
+    display: block;
+    margin-top: 0;
+
+}
+
+
+.Experiencia .listado2{
+
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+
+}
+
+
+.Skills .titulosk{  
+
+    color: #293241;
+    font-family: "Lato", sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: large;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #293241; /* Cambio del orden de los valores para que solid sea la línea */
+    display: inline-block; /* Hace que el borde se ajuste al ancho del texto */
+
+
+}
+
+
+.Skills .tituloht{
+
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic; /* Hace que el texto esté en cursiva */
+    display: block;
+    margin-top: 1px;
+
+}
+
+.Skills .listado3{
+
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+
+}
+
+
+.Skills .titulohi{
+
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic; /* Hace que el texto esté en cursiva */
+    display: block;
+    margin-top: 1px;
+
+}
+
+
+.Skills .listado4{
+
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+
+
+}
+
+
+.FormacionA{
+
+    width: 40%; /* Establecer el ancho de cada elemento */
+    height: auto;
+    background-color: #f1faee;
+    margin: 0px 2%; /* Espacio entre los elementos y con los bordes de la pantalla */
+    padding: 30px;
+}
+
+.FormacionA .tituloFA{
+
+    color: #293241;
+    font-family: "Lato", sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: large;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #293241; /* Cambio del orden de los valores para que solid sea la línea */
+    display: inline-block; /* Hace que el borde se ajuste al ancho del texto */
+
+
+
+}
+
+.FormacionA .listado5{
+
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic; /* Hace que el texto esté en cursiva */
+    display: block;
+    margin-top: 1px;
+
+}
+
+
+.FormacionA .sub1, .sub2, .sub3{
+
+    color:  #293241;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+
+}
